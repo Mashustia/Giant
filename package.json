@@ -1,0 +1,33 @@
+{
+  "name": "cat-energy",
+  "version": "15.0.0",
+  "private": true,
+  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "stylelint": "9.6.x",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"*/css/**/*.css\"",
+    "test": "npm run editorconfig && npm run stylelint"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "*/*.html",
+    "*/js/**/*.js",
+    "*/img/**/*.svg",
+    "*/css/**/*.css"
+  ],
+  "engines": {
+    "node": "8.12"
+  },
+  "dependencies": {}
+}
