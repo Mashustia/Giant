@@ -23,7 +23,7 @@
         "scale": 0.88,			 //比例大小
         "speed": 500,              //切换速度
         "verticalAlign": "middle", //中间模式 top bottom
-        'autoPlay': true,		  //是否自动播放
+        'autoPlay': false,		  //是否自动播放
         'delay': 2000
       };
 
@@ -189,6 +189,11 @@ Carrousel.prototype={
         left:firstOffsetLeft+self.setting.firstPicWidth+(gap*++i)-rw,
         top:self.setVerticalAlign(rh)
       });
+      console.log(firstOffsetLeft+self.setting.firstPicWidth+(gap*i)-rw);
+      console.log(firstOffsetLeft);
+      console.log(self.setting.firstPicWidth);
+      console.log(gap);
+      console.log(i);
 
     });
 
