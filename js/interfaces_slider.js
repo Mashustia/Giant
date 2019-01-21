@@ -179,6 +179,10 @@ Carrousel.prototype={
 
     var firstOffsetLeft=(self.setting.width-self.setting.firstPicWidth)/2;
 
+    count = 1;
+    count2 = 0.43;
+    count2 = 0.49;
+
     rightItems.each(function(i){
       level--;
       rw=rw*self.setting.scale;
@@ -187,10 +191,11 @@ Carrousel.prototype={
         zIndex:level,
         width:rw,
         height:rh,
-        left:firstOffsetLeft+self.setting.firstPicWidth+(gap*++i)-rw,
+        left:firstOffsetLeft+self.setting.firstPicWidth+(gap+370*(1-count)+70)-rw,
         top:self.setVerticalAlign(rh)
       });
 
+      count=count*0.7;
     });
 
     var lw=rightItems.last().width();
@@ -203,13 +208,15 @@ Carrousel.prototype={
         zIndex:i,
         width:lw,
         height:lh,
-        left:i*gap,
+        left:gap-370*(1-count2)+70-11,
         top:self.setVerticalAlign(lh)
       });
 
       oloop--;
       lw=lw/self.setting.scale;
       lh=lh/self.setting.scaleHeight;
+
+      count2=count2*1.42;
 
     });
   },

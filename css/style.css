@@ -149,7 +149,7 @@ img {
 }
 
 .page-header__main-nav {
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .logo {
@@ -251,15 +251,15 @@ img {
     url("../img/phones.png"),
     linear-gradient(to right, #fd712c, #f21780);
   background-position:
-    calc(50% + 479px) 0,
+    calc(50% + 479px) 1px,
     0 0;
   background-repeat: no-repeat;
-  padding-bottom: 214px;
+  padding-bottom: 215px;
 }
 
 .promo__content {
   width: 490px;
-  margin-top: 39px;
+  margin-top: 40px;
 }
 
 .promo__title {
@@ -304,7 +304,7 @@ img {
   display: block;
   width: 202px;
   height: 50px;
-  margin-top: 30px;
+  margin-top: 31px;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   line-height: 30px;
@@ -320,7 +320,7 @@ img {
 
 .advantages {
   padding-top: 118px;
-  margin-bottom: 64px;
+  margin-bottom: 66px;
   position: relative;
 }
 
@@ -330,7 +330,7 @@ img {
   width: 1140px;
   height: 2px;
   background-color: #eeeeee;
-  bottom: -64px;
+  bottom: -66px;
 }
 
 .advantages__list {
@@ -406,7 +406,7 @@ img {
 
 .main-advantage {
   padding-top: 171px;
-  padding-bottom: 161px;
+  padding-bottom: 162px;
   background-image: url("../img/phone.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 357px) -19px;
@@ -434,7 +434,7 @@ img {
 }
 
 .main-advantage__text:last-of-type {
-  margin-bottom: 27px;
+  margin-bottom: 29px;
 }
 
 .main-advantage__list {
@@ -455,7 +455,7 @@ img {
   width: 15px;
   height: 15px;
   left: -1px;
-  top: 5px;
+  top: 6px;
   background-image: url("../img/check_mark_black.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -465,7 +465,7 @@ img {
   background-color: #f7fafc;
   text-align: center;
   padding-top: 115px;
-  padding-bottom: 120px;
+  padding-bottom: 122px;
 }
 
 .interfaces__title {
@@ -506,6 +506,10 @@ img {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+
+.wrap ul li {
+  position: absolute;
 }
 
 .wrap li {
@@ -574,15 +578,226 @@ img {
   right: -94px;
 }
 
-
-.wrap ul {
-  width: 600px;
-  height: 270px;
-  padding-left: 50px;
-  padding-right: 50px;
+.price {
+  text-align: center;
+  padding-top: 114px;
+  padding-bottom: 120px;
 }
 
-.wrap ul li {
+.price__title {
+  margin: 0 auto;
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #222222;
+  width: 555px;
+  margin-bottom: 23px;
+}
+
+.price__text {
+  margin: 0 auto;
+  width: 660px;
+  margin-bottom: 77px;
+}
+
+.price__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tariff {
+  width: 263px;
+  background-color: #f7fafc;
+  padding-bottom: 40px;
+  outline: none;
+}
+
+.tariff:hover,
+.tariff:focus {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.tariff__title {
+  margin: 0;
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+
+.tariff__cost {
+  display: block;
+  width: 100%;
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #333333;
+  background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 48px;
+  padding-left: 7px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.tariff:hover .tariff__cost,
+.tariff:focus .tariff__cost {
+  background-image: linear-gradient(to right, #fd712c, #f21780);
+}
+
+.tariff__cost::before {
   position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 43px;
+  background-image: linear-gradient(17deg, #f7fafc 34%, transparent 25%), linear-gradient(-17deg, #f7fafc 34%, transparent 25%);
 }
 
+.tariff:hover .tariff__cost::before,
+.tariff:focus .tariff__cost::before {
+  background-image: linear-gradient(17deg, #ffffff 34%, transparent 25%), linear-gradient(-17deg, #ffffff 34%, transparent 25%);
+}
+
+.tariff__small-letters {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.tariff__small-letters--top {
+  top: -22px;
+}
+
+.tariff__small-letters--bottom {
+  bottom: 0;
+}
+
+.tariff__properties-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  margin-left: 34px;
+  margin-right: 27px;
+  margin-bottom: 33px;
+}
+
+.tariff__properties-item {
+  line-height: 30px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.tariff__properties-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px dashed #eeeeee;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+}
+
+.tariff__button {
+  display: block;
+  margin: 0 auto;
+  width: 139px;
+  border-radius: 20px;
+  margin-left: 66px;
+  margin-right: 58px;
+}
+
+.tariff__button-trial {
+  color: #aaaaaa;
+  padding: 3px 0;
+}
+
+.tariff__button-buy {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  margin-top: 5px;
+  padding: 7px 0;
+}
+
+.tariff:hover .tariff__button-buy,
+.tariff:focus .tariff__button-buy,
+.tariff__button-buy:hover,
+.tariff__button-buy:focus {
+  color: #ffffff;
+  background-image: linear-gradient(to right, #fd712c, #f21780);
+  box-shadow: 0 2px 0 #d6d6d6, 0 -2px 0 #d6d6d6, -2px 0 0 #d6d6d6, 2px 0 0 #d6d6d6;
+  border-color: #d6d6d6;
+  width: 141px;
+  margin-top: 4px;
+  padding: 8px 0;
+}
+
+.video-clip {
+  background-color: #253846;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-clip__video {
+  width: 100%;
+}
+
+.video-clip__play-button {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-image: linear-gradient(to right, #fd712c, #f21780);
+  background-position: 50% 50%;
+  content: "";
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  border: none;
+}
+
+.video-clip__play-button::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  background-image: url("../img/play_icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 22px;
+  height: 25px;
+}
+
+.reviews {
+  padding-top: 115px;
+  text-align: center;
+}
+
+.reviews__title {
+  margin: 0 auto;
+  font-family: "Dosis", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #222222;
+  width: 435px;
+  margin-bottom: 23px;
+}
+
+.reviews__description {
+  margin: 0 auto;
+  width: 660px;
+  margin-bottom: 40px;
+}
