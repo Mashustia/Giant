@@ -20,7 +20,8 @@
         "height": 500,            //幻灯片高度
         "firstPicWidth": 360,     //第一张图片宽
         "firstPicHeight": 500,    //第一张图片高度
-        "scale": 0.88,			 //比例大小
+        "scale": 1,			 //比例大小
+        "scaleHeight": 0.81,
         "speed": 500,              //切换速度
         "verticalAlign": "middle", //中间模式 top bottom
         'autoPlay': false,		  //是否自动播放
@@ -181,7 +182,7 @@ Carrousel.prototype={
     rightItems.each(function(i){
       level--;
       rw=rw*self.setting.scale;
-      rh=rh*self.setting.scale;
+      rh=rh*self.setting.scaleHeight;
       $(this).css({
         zIndex:level,
         width:rw,
@@ -189,11 +190,6 @@ Carrousel.prototype={
         left:firstOffsetLeft+self.setting.firstPicWidth+(gap*++i)-rw,
         top:self.setVerticalAlign(rh)
       });
-      console.log(firstOffsetLeft+self.setting.firstPicWidth+(gap*i)-rw);
-      console.log(firstOffsetLeft);
-      console.log(self.setting.firstPicWidth);
-      console.log(gap);
-      console.log(i);
 
     });
 
@@ -213,7 +209,7 @@ Carrousel.prototype={
 
       oloop--;
       lw=lw/self.setting.scale;
-      lh=lh/self.setting.scale;
+      lh=lh/self.setting.scaleHeight;
 
     });
   },
