@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giant</title>
     <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/interfaces_slider.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700|Roboto:300,400,500,700" rel="stylesheet">
@@ -131,7 +133,7 @@
         <div class="interfaces__inner container">
           <h2 class="interfaces__title">Take a look at our screenshots</h2>
           <p class="interfaces__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
-          <div class="interfaces__slider slider">
+          <div class="interfaces__slider">
             <div class="wrap" id="wrap">
               <div class="gg_left gg_btn"></div>
               <div class="gg_right gg_btn"></div>
@@ -156,7 +158,7 @@
         <p class="price__text">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
 
         <ul class="price__list">
-            <li class="price__item tariff" tabindex="0">
+            <li class="price__item tariff">
               <h3 class="tariff__title">Basic</h3>
               <b class="tariff__cost"><sup class="tariff__small-letters tariff__small-letters--top">$</sup>12.0<sub class="tariff__small-letters tariff__small-letters--bottom">/m</sub></b>
               <ul class="tariff__properties-list">
@@ -168,7 +170,7 @@
               <a class="tariff__button tariff__button-trial" href="#">Start Free Trial</a>
               <a class="tariff__button tariff__button-buy" href="#">Buy Now</a>
             </li>
-            <li class="price__item tariff" tabindex="0">
+            <li class="price__item tariff">
               <h3 class="tariff__title">Standard</h3>
               <b class="tariff__cost"><sup class="tariff__small-letters tariff__small-letters--top">$</sup>24.0<sub class="tariff__small-letters tariff__small-letters--bottom">/m</sub></b>
               <ul class="tariff__properties-list">
@@ -180,7 +182,7 @@
               <a class="tariff__button tariff__button-trial" href="#">Start Free Trial</a>
               <a class="tariff__button tariff__button-buy" href="#">Buy Now</a>
             </li>
-            <li class="price__item tariff" tabindex="0">
+            <li class="price__item tariff">
               <h3 class="tariff__title">Premium</h3>
               <b class="tariff__cost"><sup class="tariff__small-letters tariff__small-letters--top">$</sup>250.0<sub class="tariff__small-letters tariff__small-letters--bottom">/m</sub></b>
               <ul class="tariff__properties-list">
@@ -192,7 +194,7 @@
               <a class="tariff__button tariff__button-trial" href="#">Start Free Trial</a>
               <a class="tariff__button tariff__button-buy" href="#">Buy Now</a>
             </li>
-            <li class="price__item tariff" tabindex="0">
+            <li class="price__item tariff">
               <h3 class="tariff__title">Enterprise</h3>
               <b class="tariff__cost"><sup class="tariff__small-letters tariff__small-letters--top">$</sup>999.0<sub class="tariff__small-letters tariff__small-letters--bottom">/m</sub></b>
               <ul class="tariff__properties-list">
@@ -220,85 +222,150 @@
         <h2 class="reviews__title">What our customers are saying</h2>
         <p class="reviews__description">Everyone’s reasons for learning user interface design are different. If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?</p>
 
-        <div class="reviews__slider slider">
-          <div class="slide">
-            <h3 class="slide_user-name">Alexandra Bullock</h3>
-            <span class="slide__company">Apple Inc.</span>
-            <p class="slide__text">
-              The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
-            </p>
-          </div>
-          <div class="slide">
-            <h3 class="slide_user-name">Gary Sebastian</h3>
-            <span class="slide__company">Apple Inc.</span>
-            <p class="slide__text">
-              The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
-            </p>
-          </div>
-          <div class="slide">
-            <h3 class="slide_user-name">Samantha Bilbau</h3>
-            <span class="slide__company">Apple Inc.</span>
-            <p class="slide__text">
-              The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
-            </p>
-          </div>
-          <button class="slider__button slider__button-previous" type="button"><span class="visually-hidden">Previous</span></button>
-          <button class="slider__button slider__button-next" type="button"><span class="visually-hidden">Next</span></button>
+        <div class="slider__wrapper">
+          <ul class="slider">
+            <li class="slide feedback__wrapper">
+              <div class="feedback">
+                <div class="feedback__data-wrapper">
+                  <h3 class="feedback__user-name">Alexandra Bullock</h3>
+                  <span class="feedback__company">Apple Inc.</span>
+                </div>
+                <img class="feedback__img" src="img/photo1.jpg" alt="Фотография пользователя" width="80" height="80">
+                <p class="feedback__text">
+                  The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
+                </p>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="feedback">
+                <div class="feedback__data-wrapper">
+                  <h3 class="feedback__user-name">Gary Sebastian</h3>
+                  <span class="feedback__company">Apple Inc.</span>
+                </div>
+                <img class="feedback__img" src="img/photo2.jpg" alt="Фотография пользователя" width="80" height="80">
+                <p class="feedback__text">
+                  Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
+                </p>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="feedback">
+                <div class="feedback__data-wrapper">
+                  <h3 class="feedback__user-name">Samantha Bilbau</h3>
+                  <span class="feedback__company">Apple Inc.</span>
+                </div>
+                <img class="feedback__img" src="img/photo3.jpg" alt="Фотография пользователя" width="80" height="80">
+                <p class="feedback__text">
+                  Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.
+                </p>
+              </div>
+            </li>
+            <li class="slide feedback__wrapper">
+              <div class="feedback">
+                <div class="feedback__data-wrapper">
+                  <h3 class="feedback__user-name">Alexandra Bullock</h3>
+                  <span class="feedback__company">Apple Inc.</span>
+                </div>
+                <img class="feedback__img" src="img/photo1.jpg" alt="Фотография пользователя" width="80" height="80">
+                <p class="feedback__text">
+                  The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable.
+                </p>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="feedback">
+                <div class="feedback__data-wrapper">
+                  <h3 class="feedback__user-name">Gary Sebastian</h3>
+                  <span class="feedback__company">Apple Inc.</span>
+                </div>
+                <img class="feedback__img" src="img/photo2.jpg" alt="Фотография пользователя" width="80" height="80">
+                <p class="feedback__text">
+                  Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.
+                </p>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="feedback">
+                <div class="feedback__data-wrapper">
+                  <h3 class="feedback__user-name">Samantha Bilbau</h3>
+                  <span class="feedback__company">Apple Inc.</span>
+                </div>
+                <img class="feedback__img" src="img/photo3.jpg" alt="Фотография пользователя" width="80" height="80">
+                <p class="feedback__text">
+                  Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.
+                </p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="download">
-        <h2 class="download__title">Download Giant App Now</h2>
-        <a class="download__link download__link--app-store" href="#">
-          Download
-          <img src="#" alt="Apple icon">
-          <p class="download__text">Download from app store</p>
-        </a>
-        <a class="download__link download__link--play-store" href="#">
-          Download
-          <img src="#" alt="Android icon">
-          <p class="download__text">Download from play store</p>
-        </a>
-        <a class="download__link download__link--microsoft-store" href="#">
-          Download
-          <img src="#" alt="Microsoft icon">
-          <p class="download__text">Download from microsoft store</p>
-        </a>
+        <div class="download__inner container">
+          <h2 class="download__title">Download Giant App Now</h2>
+          <div class="download__link-wrapper">
+            <a class="download__link download__link--app-store" href="#">
+              <p class="download__source">
+                <span class="download__text">Download</span>
+                Download from app store
+              </p>
+            </a>
+            <a class="download__link download__link--play-store" href="#">
+              <p class="download__source">
+                <span class="download__text">Download</span>
+                Download from play store
+              </p>
+            </a>
+            <a class="download__link download__link--microsoft-store" href="#">
+              <p class="download__source">
+                <span class="download__text">Download</span>
+                Download from microsoft store
+              </p>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
+
+
     <footer class="footer">
-      <section class="footer__socials socials">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--facebook" href="#">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="#">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--unknown" href="#">
-              <span class="visually-hidden">Unknown</span>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--unknow2" href="#">
-              <span class="visually-hidden">Unknow2</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <ul class="footer__copyright copyright">
-        <p class="copyright__text">Copyright © 2017</p>
-        <p class="copyright__text">UXSEVEN - a sister concern of codepixar.com</p>
-      </ul>
+      <div class="footer__block-group containet">
+        <section class="footer__socials socials">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="#">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--twitter" href="#">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--unknown" href="#">
+                <span class="visually-hidden">Unknown</span>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--unknown2" href="#">
+                <span class="visually-hidden">unknown2</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div class="footer__copyright copyright">
+          <p class="copyright__text">Copyright © 2017</p>
+          <p class="copyright__text">UXSEVEN - a sister concern of codepixar.com</p>
+        </div>
+      </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
     <script src="js/interfaces_slider.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
