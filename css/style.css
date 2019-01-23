@@ -815,14 +815,6 @@ img {
   top: 116px;
 }
 
-@media (max-width: 1365px) {
-  .slick-arrow,
-  .slick-prev,
-  .slick-next {
-    display: none;
-  }
-}
-
 .slick-prev {
   background-image: url(../img/arrow_left_gray.png);
   left: -90px;
