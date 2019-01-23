@@ -816,7 +816,9 @@ img {
 }
 
 @media (max-width: 1365px) {
-  .slick-arrow {
+  .slick-arrow,
+  .slick-prev,
+  .slick-next {
     display: none;
   }
 }
