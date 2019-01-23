@@ -5,13 +5,18 @@
   "description": "Giant",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+    "del": "^3.0.0",
+    "gulp": "4.0.x",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-webp": "^4.0.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"*/css/**/*.css\"",
-    "test": "npm run editorconfig && npm run stylelint"
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build"
   },
   "browserslist": [
     "last 2 versions",
