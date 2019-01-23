@@ -1,8 +1,8 @@
 {
-  "name": "cat-energy",
+  "name": "giant",
   "version": "15.0.0",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Giant",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "9.6.x",

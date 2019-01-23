@@ -138,7 +138,7 @@ img {
 
 .page-header {
   background-color: #f94d4d;
-  background-image: linear-gradient(to right, #fd712c, #f21780);
+  background-image: linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   padding-top: 30px;
   padding-bottom: 75px;
 }
@@ -148,10 +148,6 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-/* .page-header__main-nav {
-  margin-top: 1px;
-} */
 
 .logo {
   width: 165px;
@@ -252,9 +248,9 @@ img {
   background-color: #f94d4d;
   background-image:
     url("../img/phones.png"),
-    linear-gradient(to right, #fd712c, #f21780);
+    linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   background-position:
-    calc(50% + 479px) 0px,
+    calc(50% + 479px) 0,
     0 0;
   background-repeat: no-repeat;
   padding-bottom: 214px;
@@ -289,6 +285,7 @@ img {
   padding-left: 35px;
   margin-bottom: 10px;
   position: relative;
+  font-weight: 400;
 }
 
 .promo__item::before {
@@ -450,6 +447,7 @@ img {
   padding-left: 35px;
   margin-bottom: 10px;
   position: relative;
+  font-weight: 400;
 }
 
 .main-advantage__item::before {
@@ -509,7 +507,7 @@ img {
 
 .toggle__button:focus,
 .toggle__button:active {
-  background-image: linear-gradient(to right, #fd712c, #f21780);
+  background-image: linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   border: 3px solid #d0d3d5;
   width: 46px;
   height: 46px;
@@ -525,7 +523,7 @@ img {
 .toggle__button--left:active {
   background-image:
     url("../img/arrow_left_white.png"),
-    linear-gradient(to right, #fd712c, #f21780);
+    linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   left: -94px;
 }
 
@@ -538,7 +536,7 @@ img {
 .toggle__button--right:active {
   background-image:
     url("../img/arrow_right_white.png"),
-    linear-gradient(to right, #fd712c, #f21780);
+    linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   right: -94px;
 }
 
@@ -615,7 +613,7 @@ img {
 
 .tariff:hover .tariff__cost,
 .tariff:focus .tariff__cost {
-  background-image: linear-gradient(to right, #fd712c, #f21780);
+  background-image: linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
 }
 
 .tariff__cost::before {
@@ -699,7 +697,7 @@ img {
 .tariff__button-buy:hover,
 .tariff__button-buy:focus {
   color: #ffffff;
-  background-image: linear-gradient(to right, #fd712c, #f21780);
+  background-image: linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   box-shadow: 0 2px 0 #d6d6d6, 0 -2px 0 #d6d6d6, -2px 0 0 #d6d6d6, 2px 0 0 #d6d6d6;
   border-color: #d6d6d6;
   width: 141px;
@@ -725,7 +723,7 @@ img {
   position: absolute;
   width: 75px;
   height: 75px;
-  background-image: linear-gradient(to right, #fd712c, #f21780);
+  background-image: linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   background-position: 50% 50%;
   content: "";
   left: 50%;
@@ -823,7 +821,7 @@ img {
 
 .slick-arrow:focus,
 .slick-arrow:active {
-  background-image: linear-gradient(to right, #fd712c, #f21780);
+  background-image: linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   border: 3px solid #d0d3d5;
   width: 46px;
   height: 46px;
@@ -834,7 +832,7 @@ img {
 .slick-prev:active {
   background-image:
     url("../img/arrow_left_white.png"),
-    linear-gradient(to right, #fd712c, #f21780);
+    linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   left: -93px;
 }
 
@@ -842,7 +840,7 @@ img {
 .slick-next:active {
   background-image:
     url("../img/arrow_right_white.png"),
-    linear-gradient(to right, #fd712c, #f21780);
+    linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   right: -93px;
 }
 
@@ -868,7 +866,7 @@ img {
   font-weight: 400;
   color: #222222;
   margin: 0;
-  margin-top: 16px;
+  margin-top: 15px;
 }
 
 .feedback__company {
@@ -885,13 +883,13 @@ img {
 
 .feedback__text {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   order: -1;
 }
 
 .download {
   background-color: #f94d4d;
-  background-image: linear-gradient(to right, #fd712c, #f21780);
+  background-image: linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
   padding-top: 115px;
   padding-bottom: 120px;
 }
@@ -903,7 +901,7 @@ img {
   font-weight: 500;
   line-height: 36px;
   width: 352px;
-  margin-bottom: 84px;
+  margin-bottom: 85px;
   color: #ffffff;
 }
 
