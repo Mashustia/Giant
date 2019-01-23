@@ -505,6 +505,12 @@ img {
   top: 230px;
 }
 
+@media (max-width: 1365px) {
+  .toggle__button {
+    display: none;
+  }
+}
+
 .toggle__button:focus,
 .toggle__button:active {
   background-image: linear-gradient(to right, #fd712c 0%, #fb623a 33%, #f43b59 66%, #f21780 100%);
@@ -807,6 +813,12 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   top: 116px;
+}
+
+@media (max-width: 1365px) {
+  .slick-arrow {
+    display: none;
+  }
 }
 
 .slick-prev {
