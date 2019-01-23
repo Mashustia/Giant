@@ -406,7 +406,7 @@ img {
 
 .main-advantage {
   padding-top: 171px;
-  padding-bottom: 159px;
+  padding-bottom: 162px;
   background-image: url("../img/phone.png");
   background-repeat: no-repeat;
   background-position: calc(50% - 357px) -19px;
@@ -434,7 +434,7 @@ img {
 }
 
 .main-advantage__text:last-of-type {
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 
 .main-advantage__list {
@@ -920,6 +920,7 @@ img {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .download__link:hover,
@@ -934,6 +935,9 @@ img {
   content: "";
   background-repeat: no-repeat;
   background-position: 50% 67%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .download__link--app-store::before {
@@ -952,7 +956,7 @@ img {
   color: #777777;
   margin: 0;
   margin-top: 31px;
-  margin-left: 18px;
+  margin-left: 133px;
 }
 
 .download__text {

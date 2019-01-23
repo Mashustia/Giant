@@ -9,6 +9,10 @@
     "gulp": "4.0.x",
     "gulp-imagemin": "^5.0.3",
     "gulp-webp": "^4.0.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-rename": "^1.4.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
